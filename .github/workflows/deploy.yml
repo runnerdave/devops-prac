@@ -30,3 +30,14 @@ jobs:
           run: npm run build
         - name: Deploy
           run: echo "Deploying ..."
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: Install nodejs
+        uses: actions/setup-node@v3
+        with:
+            node-version: 18
+      - name: Lint source
+        run: npm run-script lint
