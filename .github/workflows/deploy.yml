@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MONGODB_CLUSTER_ADDRESS: githubactionsprac.ryoydbe.mongodb.net
-      MONGODB_USERNAME: davidnoguera
-      MONGODB_PASSWORD: jutgefLH7YViFl1h
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     steps:
       - name: Get Code
