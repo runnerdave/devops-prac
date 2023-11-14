@@ -41,3 +41,4 @@ jobs:
           echo "MONGODB_DB_NAME: $MONGODB_DB_NAME" 
           echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}" 
           echo "${{ env.PORT }}" 
+          echo "DEFAULT VAR ACTOR: $GITHUB_ACTOR"
