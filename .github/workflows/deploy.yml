@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - dev
+      - environment-variables-and-secrets
 env:
   MONGODB_DB_NAME: gha-demo
 jobs:
