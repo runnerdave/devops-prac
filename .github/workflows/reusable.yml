@@ -1,0 +1,12 @@
+name: Reusable Deploy
+on: 
+  workflow_call
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output information
+        run: echo "Deploying & uploading..."
+      - name: Set result output
+        id: set-result
+        run: echo "step-result=success" >> $GITHUB_OUTPUT
