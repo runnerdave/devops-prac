@@ -21,6 +21,8 @@ jobs:
         run: npm ci
       - name: Lint code
         run: npm run lint
+      - name: list-current-path
+        run: pwd
   test:
     runs-on: ubuntu-latest
     steps:
