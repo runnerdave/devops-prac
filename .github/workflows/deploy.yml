@@ -69,7 +69,7 @@ jobs:
       - name: Get AWS permissions
         uses: aws-actions/configure-aws-credentials@v4
         with: 
-          role-to-asume: arn:aws:iam::000776447645:role/github-workflow
+          role-to-assume: arn:aws:iam::000776447645:role/github-workflow
           aws-region: ap-southeast-2
       - name: Deploy site
         id: deploy
